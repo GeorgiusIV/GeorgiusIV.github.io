@@ -1,0 +1,40 @@
+ntainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .container .menubar {
+        display: flex;
+        position: fixed;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: red;
+        z-index: 3;
+        height: 2em;
+        width: 90vh;
+    }
+
+    .container .image {
+        flex-grow: 1;
+        background-color: orange;
+        height: 90vh;
+        width: 100vw;
+        z-index: 1;
+    }
+
+        .container .image #text {
+            position: absolute;
+            background-color: red;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 2;
+        }
+
+
+    .container #item4 {
+        background-color: red;
+        height: 100vh;
+        z-index: 2;
+    }
